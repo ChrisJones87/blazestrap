@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71C20B4E-8AD1-4BF4-925C-F46F04BBB294}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazestrap.Apps.Example", "src\Blazestrap.Apps.Example\Blazestrap.Apps.Example.csproj", "{5D8E295C-53C1-4775-949B-4454EED6FFB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazestrap.UI", "src\Blazestrap.UI\Blazestrap.UI.csproj", "{1CB73B03-1A03-47E5-93CB-55AF389E78B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D8E295C-53C1-4775-949B-4454EED6FFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8E295C-53C1-4775-949B-4454EED6FFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8E295C-53C1-4775-949B-4454EED6FFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8E295C-53C1-4775-949B-4454EED6FFB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CB73B03-1A03-47E5-93CB-55AF389E78B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB73B03-1A03-47E5-93CB-55AF389E78B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB73B03-1A03-47E5-93CB-55AF389E78B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB73B03-1A03-47E5-93CB-55AF389E78B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D8E295C-53C1-4775-949B-4454EED6FFB3} = {71C20B4E-8AD1-4BF4-925C-F46F04BBB294}
+		{1CB73B03-1A03-47E5-93CB-55AF389E78B3} = {71C20B4E-8AD1-4BF4-925C-F46F04BBB294}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58BE8CE7-93C1-4B1E-ABAD-46B71454A218}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+﻿
+@{
+   var type = $"bg-{Type.Value}";
+}
+
+<span class="badge @type @Classes">
+   @if (Text != null)
+   {
+      @Text
+   }
+   else
+   {
+      @ChildContent
+   }
+</span>
+
+@code {
+   [Parameter]
+   public string Text { get; set; }
+
+   [Parameter]
+   public RenderFragment ChildContent { get; set; }
+
+   [Parameter]
+   public BadgeType Type { get;set;} = BadgeType.Primary;
+
+   [Parameter]
+   public string Classes { get; set; } = "";
+
+}

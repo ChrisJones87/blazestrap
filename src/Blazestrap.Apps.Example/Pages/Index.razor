@@ -1,0 +1,182 @@
+﻿@page "/"
+
+<div class="container">
+
+   <h1>Components</h1>
+
+
+   <h2>Buttons</h2>
+
+
+   <h3>Types</h3>
+
+   <Card>
+      <Body>
+         <Button>Primary</Button>
+         <Button Type="ButtonType.Secondary">Secondary</Button>
+         <Button Type="ButtonType.Success">Success</Button>
+         <Button Type="ButtonType.Danger">Danger</Button>
+         <Button Type="ButtonType.Warning">Warning</Button>
+         <Button Type="ButtonType.Info">Info</Button>
+         <Button Type="ButtonType.Light">Light</Button>
+         <Button Type="ButtonType.Dark">Dark</Button>
+         <Button Type="ButtonType.Link">Link</Button>
+      </Body>
+   </Card>
+
+   <h3>Outline</h3>
+
+   <Card>
+      <Body>
+         <Button Outline="true" Type="ButtonType.Primary">Primary</Button>
+         <Button Outline="true" Type="ButtonType.Secondary">Secondary</Button>
+         <Button Outline="true" Type="ButtonType.Success">Success</Button>
+         <Button Outline="true" Type="ButtonType.Danger">Danger</Button>
+         <Button Outline="true" Type="ButtonType.Warning">Warning</Button>
+         <Button Outline="true" Type="ButtonType.Info">Info</Button>
+         <Button Outline="true" Type="ButtonType.Light">Light</Button>
+         <Button Outline="true" Type="ButtonType.Dark">Dark</Button>
+         <Button Outline="true" Type="ButtonType.Link">Link</Button>
+      </Body>
+   </Card>
+
+   <h3>Sizes</h3>
+
+   <h4>Large buttons</h4>
+
+   <Card>
+      <Body>
+         <Button Type="ButtonType.Primary" Size="ButtonSize.Large">Large Button</Button>
+         <Button Type="ButtonType.Secondary" Size="ButtonSize.Large">Large Button</Button>
+      </Body>
+   </Card>
+
+   <h4>Small buttons</h4>
+
+   <Card>
+      <Body>
+         <Button Type="ButtonType.Primary" Size="ButtonSize.Small">Small Button</Button>
+         <Button Type="ButtonType.Secondary" Size="ButtonSize.Small">Small Button</Button>
+      </Body>
+   </Card>
+
+   <h4>Block level buttons</h4>
+
+   <Card>
+      <Body>
+         <Button Type="ButtonType.Primary" Block="true">Block level button</Button>
+         <Button Type="ButtonType.Secondary" Block="true">Block level button</Button>
+      </Body>
+   </Card>
+
+   <h4>Disabled state</h4>
+
+   <Card>
+      <Body>
+         <Button Type="ButtonType.Primary" Disabled="true">Disabled primary</Button>
+         <Button Type="ButtonType.Secondary" Disabled="true">Disabled secondary</Button>
+      </Body>
+   </Card>
+
+   <h3>Button properties</h3>
+
+   <Card>
+      <Body>
+         <Button Type="@("dark")">Type using text</Button>
+         <Button Text="Text property" />
+      </Body>
+   </Card>
+
+
+   <h2>Button Groups</h2>
+
+   <h3>Example</h3>
+
+   <ButtonGroup>
+      <Button Type="ButtonType.Secondary">Left</Button>
+      <Button Type="ButtonType.Secondary">Middle</Button>
+      <Button Type="ButtonType.Secondary">Right</Button>
+   </ButtonGroup>
+
+   <h3>Button toolbar</h3>
+
+   <ButtonToolbar>
+      <ButtonGroup Classes="mr-2">
+         @foreach (var i in Enumerable.Range(1, 4))
+         {
+            <Button Type="ButtonType.Secondary">@i</Button>
+         }
+      </ButtonGroup>
+      <ButtonGroup Classes="mr-2">
+         @foreach (var i in Enumerable.Range(5, 3))
+         {
+            <Button Type="ButtonType.Secondary">@i</Button>
+         }
+      </ButtonGroup>
+      <ButtonGroup Classes="mr-2">
+         @foreach (var i in Enumerable.Range(8, 1))
+         {
+            <Button Type="ButtonType.Secondary">@i</Button>
+         }
+      </ButtonGroup>
+   </ButtonToolbar>
+
+   <h3>Sizes</h3>
+
+   <Card>
+      <Body>
+         <div class="mb-2">
+            <ButtonGroup Size="ButtonSize.Large">
+               <Button Type="ButtonType.Secondary">Left</Button>
+               <Button Type="ButtonType.Secondary">Middle</Button>
+               <Button Type="ButtonType.Secondary">Right</Button>
+            </ButtonGroup>
+         </div>
+         <div class="mb-2">
+            <ButtonGroup Size="ButtonSize.Regular">
+               <Button Type="ButtonType.Secondary">Left</Button>
+               <Button Type="ButtonType.Secondary">Middle</Button>
+               <Button Type="ButtonType.Secondary">Right</Button>
+            </ButtonGroup>
+         </div>
+         <div class="mb-2">
+            <ButtonGroup Size="ButtonSize.Small">
+               <Button Type="ButtonType.Secondary">Left</Button>
+               <Button Type="ButtonType.Secondary">Middle</Button>
+               <Button Type="ButtonType.Secondary">Right</Button>
+            </ButtonGroup>
+         </div>
+      </Body>
+   </Card>
+
+   <h2>Badges</h2>
+
+   <h3>Headings</h3>
+
+   <Card>
+      <Body>
+         <h1>Example heading <Badge>New</Badge></h1>
+         <h2>Example heading <Badge>New</Badge></h2>
+         <h3>Example heading <Badge>New</Badge></h3>
+         <h4>Example heading <Badge>New</Badge></h4>
+         <h5>Example heading <Badge>New</Badge></h5>
+         <h6>Example heading <Badge>New</Badge></h6>
+      </Body>
+   </Card>
+
+   <h3>Colours</h3>
+
+   <Card>
+      <Body>
+         <Badge Type="BadgeType.Primary">Primary</Badge>
+         <Badge Type="BadgeType.Secondary">Secondary</Badge>
+         <Badge Type="BadgeType.Success">Success</Badge>
+         <Badge Type="BadgeType.Danger">Danger</Badge>
+         <Badge Type="BadgeType.Warning" Classes="text-dark">Warning</Badge>
+         <Badge Type="BadgeType.Info">Info</Badge>
+         <Badge Type="BadgeType.Light" Classes="text-dark">Light</Badge>
+         <Badge Type="BadgeType.Dark">Dark</Badge>
+      </Body>
+   </Card>
+
+</div>
